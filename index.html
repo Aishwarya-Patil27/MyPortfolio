@@ -1,88 +1,759 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovative Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate developer with a knack for creating engaging applications. Explore my portfolio to see my work and skills.</p>
-    </section>
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/cat-icon.png" type="image/x-icon">
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill">
-            <h3>HTML</h3>
-            <div class="progress-bar">
-                <div class="progress" style="width: 90%;"></div>
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+      <!-- box icons -->
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Huong(Amy) Do portfolio website</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               Huong (Amy) <span>Do</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link">About</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#services" class="nav__link">Services</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#projects" class="nav__link">Projects</a>
+                  </li>
+                  <!-- <li class="nav__item">
+                     <a href="assets/img/Amy_Resume_Internship_2024.pdf" class="nav__link">Resume</a>
+                  </li> -->
+                  <li class="nav__item">
+                     <a href="#contact" class="nav__link">Contact</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
             </div>
-        </div>
-        <div class="skill">
-            <h3>CSS</h3>
-            <div class="progress-bar">
-                <div class="progress" style="width: 85%;"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <h3>JavaScript</h3>
-            <div class="progress-bar">
-                <div class="progress" style="width: 80%;"></div>
-            </div>
-        </div>
-        <!-- Add more skills as needed -->
-    </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="carousel">
-            <div class="carousel-item active">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
             </div>
-            <div class="carousel-item">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__content">
+                  <div class="home__data">
+                     <h3 class="home__subtitle">
+                        Hello, <span>I’m</span>
+                     </h3>
+   
+                     <h1 class="home__title">Huong(Amy) Do</h1>
+   
+                     <h3 class="home__education">A CS Senior at UW-Madison</h3>
+   
+                     <p class="home__description">
+                        With knowledge in full-stack development, I offer the best projects resulting 
+                        in quality work.
+                     </p>
+   
+                     <a href="#contact" class="button">Let's Talk</a>
+                  </div>
+
+                  <div class="home__social">
+                     <a href="https://github.com/dth2701" target="_blank" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+
+                     <a href="https://www.linkedin.com/in/huong-thien-do/" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+
+                     <a href="https://www.instagram.com/dth.2701" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="home__image">
+                  <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBlob" mask-type="alpha">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                     </mask>
+                     <g mask="url(#maskBlob)">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                  
+                        <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
+                  
+                     <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="home__img" id="imageBlob" width="640" height="925" href="assets/img/IMG_HuongDo.png"/>
+                     </defs>
+                  </svg>
+               </div>
             </div>
-            <!-- Add more carousel items as needed -->
-        </div>
-        <div class="carousel-controls">
-            <button id="prevBtn">Prev</button>
-            <button id="nextBtn">Next</button>
-        </div>
-    </section>
+         </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <div class="about__data">
+                  <h3 class="section__subtitle">
+                     My <span>Achievements</span>
+                  </h3>
+                  <h2 class="section__title">
+                     Work Experiences
+                  </h2>
+                  <div class = "workeduc-box">
+                     <div class = "workeduc-content" >
+                        <span class ="year"><i class='bx bxs-calendar'></i>05/2024 - 08/2024</span>
+                        <h4>SWE Intern at Ellucian</h4>
+                        <p>• Collaborating within an Agile team environment to develop software products, delivering SaaS solutions to 2,500+ higher education institutions across the U.S using AngularJS, C# .NET, Bootstrap and SQL Server, hosted on Azure. </p>
+                        <!-- <p>• Contributing to multiple full-stack web applications using AngularJS, C# .NET, Bootstrap and SQL Server, hosted on Azure. Developed online webforms to streamline and modernize the financial aid processes in colleges.</p> -->
 
-    <footer>
-        <p>&copy; 2024 Innovative Portfolio</p>
-    </footer>
+                     </div>
+                     <div class = "workeduc-content" >
+                        <span class ="year"><i class='bx bxs-calendar'></i>05/2024 - 08/2024</span>
+                        <h4>Undergraduate Research Assistant at People and Robots Laboratory</h4>
+                        <p>• Conducting a literature review to develop a scale for human-robot interactions (HRI), evaluating 200+ papers weekly, focusing on user studies.</p>
+                     </div>
+                     <div class = "workeduc-content" >
+                        <span class ="year"><i class='bx bxs-calendar'></i>09/2023 - 02/2024</span>
+                        <h4>Student Frontend Engineer for Office of Human Resources at UW-Madison</h4>
+                        <p>• Developed and maintained OHR websites and applications using PHP/MySQL, JSON/jQuery, JavaScript frameworks (AngularJS, React), and SASS tool, resulting in efficient and responsive designs.</p>
+                     </div>
+             
 
-    <script src="js/scripts.js"></script>
-</body>
+                     <div class = "workeduc-content" >
+                        <span class ="year"><i class='bx bxs-calendar'></i>05/2023 - 08/2023</span>
+                        <h4>SWE Intern at TANAAKK</h4>
+                        <p>• Collaborated within a global team to develop Icuco, a web-based platform offering time management solutions tailored for kindergarten management systems using React.js and Spring Boot.</p>
+                        <!-- <p>• Implemented an attendance tracking feature, using Axios to efficiently manage API requests, which enhanced the display and update of student records instantly, supporting 500+ daily users.</p>
+                        <p>• Contributed to backend development using Java Spring Boot, enhancing operations by managing a SQL database with 500,000+ records, focusing on RESTful API design and implementation.</p> -->
+                     </div>
+
+                     <div class = "workeduc-content" >
+                        <span class ="year"><i class='bx bxs-calendar'></i>01/2023 - Present</span>
+                        <h4>Academic Tutor at UW-Madison</h4>
+                        <!-- <p>• Reinforcing instruction on fundamental structures of computer systems and C language to 200+ undergrads weekly.</p> -->
+                        <p>• Course: CS354(Machine Organization & Programming)</p>
+                     </div>
+                  </div>
+                  <!-- <h2 class="section__title">
+                     About Me
+                  </h2>
+
+                  <p class="about__description">
+                     Frontend developer, I create web pages with 
+                     UI / UX user interface, I have years of 
+                     experience and many clients are happy with the 
+                     projects carried out.
+                  </p> -->
+
+                  <a href="#contact" class="button">Contact Me</a>
+               </div>
+
+               <div class="about__image">
+                  <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBorder" mask-type="alpha">
+                        <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                        171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+                        448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+                        270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+                        439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black"/>
+                     </mask>
+                     <g mask="url(#maskBorder)">
+                        <rect x="37" width="476" height="630" fill="url(#pattern2)"/>
+                        
+                        <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                        192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                        580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                        40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                        175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern3)"/>
+                  
+                     <defs>
+                        <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="about__img" id="imageBorder" width="640" height="940" href="assets/img/IMG_HuongDo02.png"/>
+                     </defs>
+                  </svg>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SKILLS ====================-->
+
+
+         <section class="skillsDiv section">
+            <h3 class="section__subtitle">
+               My <span>Technologies</span>
+            </h3>
+
+            <h2 class="section__title">
+               Technologies I've worked with
+            </h2>
+
+            <div class="skillsMain container grid">
+              <div class="techDiv" id="frontend">
+                <div class="techDivTitle">
+                  Frontend
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/reactlogo2.png" alt="React / React Native" />
+                  <span class="tooltiptext">React / React Native</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/htmllogo.png" alt="HTML" />
+                  <span class="tooltiptext">HTML</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/csslogo.png" alt="CSS" />
+                  <span class="tooltiptext">CSS</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/jslogo.png" alt="JavaScript" />
+                  <span class="tooltiptext">JavaScript</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/angular.png" alt="Angular.js" />
+                  <span class="tooltiptext">Angular.js</span>
+                </div>
+              </div>
+        
+              <div class="techDiv" id="backend">
+                <div class="techDivTitle">
+                  Backend
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/flasklogo.png" alt="Spring Boot" />
+                  <span class="tooltiptext">Flask</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/spring-logo.png" alt="Spring Boot" />
+                  <span class="tooltiptext">Java Spring Boot</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/sql.png" alt="SQL" />
+                  <span class="tooltiptext">SQL</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/mySQL.png" alt="mySQL" />
+                  <span class="tooltiptext">mySQL</span>
+                </div>
+              </div>
+        
+              <div class="techDiv" id="devops">
+                <div class="techDivTitle">
+                  DevOps
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/gitlogo.png" alt="Git" />
+                  <span class="tooltiptext">Git</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/githublogo.png" alt="Github" />
+                  <span class="tooltiptext">Github</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/ubuntu.png" alt="ubuntu" />
+                  <span class="tooltiptext">Ubuntu</span>
+                </div>
+              </div>
+        
+              <div class="techDiv" id="languages" >
+                <div class="techDivTitle">
+                  Languages
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/java.png" alt="Java" />
+                  <span class="tooltiptext">Java</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/jslogo.png" alt="JavaScript" />
+                  <span class="tooltiptext">JavaScript</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/python.png" alt="Python" />
+                  <span class="tooltiptext">Python</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/csharplogo.png" alt="C#" />
+                  <span class="tooltiptext">C#</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/c++.png" alt="C++" />
+                  <span class="tooltiptext">C++</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/julia.png" alt="Julia" />
+                  <span class="tooltiptext">Julia 1.8.5</span>
+                </div>
+              </div>
+        
+              <div class="techDiv" id="tools">
+                <div class="techDivTitle">
+                  Tools
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/vscode.png" alt="VS Code" />
+                  <span class="tooltiptext">VS Code</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/IntelliJ_IDEA.png" alt="IntelliJ" />
+                  <span class="tooltiptext">IntelliJ</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/eclipse.png" alt="Eclipse" />
+                  <span class="tooltiptext">Eclipse</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/linux-logo.png" alt="Linux" />
+                  <span class="tooltiptext">Linux</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/figma-logo.png" alt="IntelliJ" />
+                  <span class="tooltiptext">Figma</span>
+                </div>
+                
+              </div>
+        
+              <div class="techDiv" id="testing" >
+                <div class="techDivTitle">
+                  Working
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/School Symbol.png" alt="uwmadison" />
+                  <span class="tooltiptext">CS Student</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/people_and_robots_laboratory_logo.jpeg" alt="research" />
+                  <span class="tooltiptext">Undergrad Research Assistant</span>
+                </div>
+                <!-- <div class="tech tooltip">
+                  <img src="/assets/tech/wacm.png" alt="wacm" />
+                  <span class="tooltiptext">Association for Women in Computing</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/longcafe.png" alt="longcafe" />
+                  <span class="tooltiptext">Manager at Long Cafe Company</span>
+                </div> -->
+                <div class="tech tooltip">
+                  <img src="/assets/tech/unt.png" alt="researcher" />
+                  <span class="tooltiptext">STEM Researcher</span>
+                </div>
+        
+              </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section" id="services">
+            <h3 class="section__subtitle">
+               My <span>Services</span>
+            </h3>
+
+            <h2 class="section__title">
+               What I Do
+            </h2>
+
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <i class="ri-layout-3-line services__icon"></i>
+
+                  <h2 class="services__title">Front-end Developer</h2>
+
+                  <p class="services__description">
+                     Proficient in front-end development with 2+ years of experience using technologies such as React, React Native, JavaScript, HTML, and CSS. 
+                     I specialize in building responsive and dynamic user interfaces, leveraging tools like Figma for design and wireframing.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <i class="bx bx-laptop services__icon"></i>
+
+                  <h2 class="services__title">Back-end Developer</h2>
+
+                  <p class="services__description">
+                     2-year experience in back-end development is focusing on creating robust server-side logic using Python with Flask, Java with Spring Boot, and SQL databases. 
+                     I am skilled in API development, database optimization, and ensuring secure and efficient data management.
+                  </p>
+               </article>
+
+            </div>
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <!-- div.projects.container. -->
+            <h3 class="section__subtitle">
+               My <span>Projects</span>
+            </h3>
+            <h2 class="section__title">
+               Recent Projects
+            </h2>
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <img src="assets/img/social-to-do-app.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Full-Stack Mobile App</span>
+
+                     <h2 class="projects__title">Social To Do</h2>
+                     <p class = "card__text">Co-developed a React Native and Flask-based mobile app for UW students, integrating task management with social
+                        networking. Focused on backend integration using Flask, SQLite, and Firebase for efficient data handling and Azure
+                        for cloud hosting.
+                     </p>
+                     <p class = "card__text">Technologies: React Native, JavaScript, Flask, SQLite.</p>
+                     <a href="https://github.com/A9ine/Social-To-Do" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/movie-finder-app.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Movie Finder</h2>
+                     <p class = "card__text">Developed a user-centric movie recommendation web application, 
+                        utilizing React.js and The Movie Database API to deliver personalized film suggestions and detailed movie information.
+                     </p>
+                     <p class = "card__text">Technologies: React, JavaScript, HTML, CSS.</p>
+
+                     <a href="https://dth2701.github.io/Movie-Finder" class="projects__button">
+                        Demo <i class="ri-external-link-line"></i>
+                     </a>
+                     <a href="https://github.com/dth2701/Movie-Finder" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/wisconsin-lighthouse.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Exploration Game</span>
+
+                     <h2 class="projects__title">Wisconsin Lighthouse</h2>
+                     <p class = "card__text">Co-developed an interactive digital lighthouse experience developed 
+                        using the Godot game engine, featuring immersive 3D scenes, and dynamic user interactions through Focus Observers, 
+                        offering a unique blend of education and exploration within a virtual lighthouse environment.
+                     </p>
+                     <p class = "card__text">Technologies: C#, Godot 4.0</p>
+                     <a href="https://illuminate-wisc.github.io/Lighthouse/" class="projects__button">
+                        Demo <i class="ri-external-link-line"></i>
+                     </a>
+                     <a href="https://github.com/Illuminate-Wisc/Lighthouse" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/RateRiseRealty.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Website/LLM</span>
+
+                     <h2 class="projects__title">RateRiseRealty</h2>
+                     <p class = "card__text">A chatbot application designed for property managers, 
+                        with detailed insights and analytics for apartment properties across 10 big cities near Dallas, including Dallas itself.
+                     </p>
+                     <p class = "card__text">Technologies: React, Chart.js library, JSON, ChatGPT API</p>
+                     <a href="https://660044023840caf1bad9ae7c--amazing-monstera-f03c23.netlify.app/" class="projects__button">
+                        Demo <i class="ri-external-link-line"></i>
+                     </a>
+                     <a href="https://github.com/dth2701/RateRiseRealty" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/weather-app.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Weather App</h2>
+
+                     <p class = "card__text">"Weather App" is a clean and user-friendly web application designed to provide real-time weather information. 
+                        It allows users to search for weather conditions in specific locations,
+                        displaying details such as temperature, humidity, wind speed, and general conditions.
+                     </p>
+                     <p class = "card__text">Technologies: React, JavaScript, HTML, CSS.</p>
+
+                     <a href="https://dth2701.github.io/weather-app/" class="projects__button">
+                        Demo <i class="ri-external-link-line"></i>
+                     </a>
+                     <a href="https://github.com/dth2701/weather-app" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/SiameseMethod.gif" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+
+                     <h2 class="projects__title">Sudoku Solver</h2>
+                     <p class = "card__text">Developed a C Sudoku Solver using the Siamese method for any grid size, 
+                        incorporating arrays, command-line arguments, file I/O, pointers, and structures, debugged with GDB.
+                     </p>
+                     <p class = "card__text">Technologies: C and GDB</p>
+
+                     <a href="https://github.com/dth2701/Sudoku-Solver" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/ai-player.svg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <h2 class="projects__title">AI Player</h2>
+                     <p class = "card__text">Developed a AI game player using the Minimax algorithm with Alpha-Beta Pruning to strategically predict the best moves, 
+                        allowing the system to evaluate over 10,000 moves per second and ensuring optimal counter-strategies against human opponents.
+                     </p>
+                     <p class = "card__text">Technologies: Python.</p>
+
+                     <a href="https://github.com/dth2701/AI-Player" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/bookmapper.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <h2 class="projects__title">Book Mapper</h2>
+                     <p class = "card__text">Co-developed the application to sort through 11,000+ books in CSV format to improve user experience to minimize average searching time. 
+                        I was in charged on operating system functionality to iterate over all the values to secure, manipulate and present data.
+                     </p>
+                     <p class = "card__text">Technologies: Java, Linux(Ubuntu).</p>
+
+                     <a href="https://github.com/dth2701/BookMapper" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/scheduler.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <h2 class="projects__title">Inventory Log Scheduler</h2>
+                     <p class = "card__text">Co-developed the application to  to streamline and incentivize delivery orders organization stored in HTML format for customers. 
+                        I was in charged for devising initial algorithm to improve reliability, security, and maintainability of the system.
+                     </p>
+                     <p class = "card__text">Technologies: Java, Linux(Ubuntu), HTML.</p>
+
+                     <a href="https://github.com/dth2701/Inventory-Log-Scheduler" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/capitol-path.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <h2 class="projects__title">Capital Path</h2>
+                     <p class = "card__text">My team developed the application to find the shortest path between two selected capitol states. 
+                        I was in charged in transferring 50 state capitals onto the DOT format and convert data onto memory drives.
+                     </p>
+                     <p class = "card__text">Technologies: Java, Linux(Ubuntu), DOT.</p>
+
+                     <a href="https://github.com/dth2701/-Capitol-Paths" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/dog-gallery.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Dog Gallery</h2>
+                     <p class = "card__text">Developed a dog breed recommendation web application, 
+                        utilizing React.js and the Dog API to display images of that breed in the gallery.
+                     </p>
+                     <p class = "card__text">Technologies: React, JavaScript, HTML, CSS.</p>
+
+                     <a href="https://dth2701.github.io/Dog-Gallery" class="projects__button">
+                        Demo <i class="ri-external-link-line"></i>
+                     </a>
+                     <a href="https://github.com/dth2701/Dog-Gallery" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/task-management-web.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+                     <h2 class="projects__title">GeoWeather Task Manager</h2>
+                     <p class = "card__text">The application helps users organize tasks with options to mark as done or delete but also integrates real-time weather updates and date-time displays, 
+                        all accessible through a user-friendly interface.
+                     </p>
+                     <p class = "card__text">Technologies: AngularJS, JavaScript, HTML, CSS.</p>
+
+                     <a href="https://github.com/dth2701/GeoWeather-Task-Manager" class="projects__button">
+                        Demo <i class="ri-external-link-line"></i>
+                     </a>
+                     <a href="https://dth2701.github.io/GeoWeather-Task-Manager/" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                     </a>
+                  </div>
+               </article>
+
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h3 class="section__subtitle">
+               Get In <span>Touch</span>
+            </h3>
+
+            <h2 class="section__title">
+               Contact Me
+            </h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form" id="contact-form">
+                  <div class="contact__group">
+                     <input type="text" name="user_name" required placeholder="Enter your name" class="contact__input">
+                     <input type="email" name="user_email" required placeholder="Enter your email" class="contact__input">
+                  </div>
+
+                  <textarea name="user_project" required placeholder="Enter your message" class="contact__input"></textarea>
+                  
+                  <p class="contact__message" id="contact-message"></p>
+                 
+                  <div class="contact__buttons">
+                     <button type="submit" class="button contact__button">
+                        Send Message
+                     </button>
+                  </div>
+               </form>
+
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+               <h1 class="footer__title">
+                  Huong (Amy) <span>Do</span>
+               </h1>
+               
+               <h2 class="footer__education">
+                  Looking forward to growing as a Full-Stack Developer!   
+               </h2>
+            </div>
+
+            <div class="footer__social">
+               <a href="https://www.linkedin.com/in/huong-thien-do/" target="_blank" class="home__social-link">
+                  <i class="ri-linkedin-box-line"></i>
+               </a>
+
+               <a href="https://github.com/dth2701" target="_blank" class="home__social-link">
+                  <i class="ri-github-fill"></i>
+               </a>
+
+               <a href="https://www.instagram.com/dth.2701" target="_blank" class="footer__social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+            </div>
+
+            <span class="footer__copy">
+               &#169; 2024 Huong Do. ALL RIGHTS RESERVED
+            </span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== EMAIL JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>

@@ -931,3 +931,14 @@ svg {
     right: 3rem;
   }
 }
+
+.services__list {
+   list-style-type: disc; /* Adds the bullet points (dots) */
+   margin-left: 20px; /* Moves the bullets inward */
+   padding-left: 20px; /* Ensures the bullet points are spaced from the text */
+}
+
+.services__list li {
+   margin-bottom: 8px; /* Adds space between each bullet point */
+   display: list-item; /* Ensures the list items are treated as list items */
+}
